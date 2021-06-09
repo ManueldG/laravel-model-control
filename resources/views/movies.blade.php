@@ -2,14 +2,16 @@
 
 @section('content')
     <div class="container">
+        <h1>Lista Films</h1>
         <p>
 
             <ul>
                 @foreach ($movies as $movie)
                    <li>
-                       {{$movie->title}}
-                       {{$movie->date}}
-                       {{$movie->vote}}
+                           {{ $movie->title }}
+                           {{ $movie->date }}
+                           {{ $movie->vote }}
+
                     </li>
                 @endforeach
 
