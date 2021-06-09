@@ -7,12 +7,15 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function index(){
-        $nomi=['Manuel','Gianni','Franco','Andrea'];
-        $cognomi=['dG','Rossi','Bianchi','Verdi'];
-        return view('home',compact('nomi','cognomi'));
+        return view('home');
+
     }
 
     public function contatti(){
-        return view('contatti');
+
+        $nomi=['Manuel','Gianni','Franco','Andrea'];
+        $cognomi=['dG','Rossi','Bianchi','Verdi'];
+
+        return view('contatti',compact('nomi','cognomi'));
     }
 }
